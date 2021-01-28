@@ -60,7 +60,7 @@
             }
         },
         "PanoramaManagementIP": {
-            "defaultValue": "10.0.0.5",
+            "defaultValue": "10.100.1.4",
             "type": "String",
             "metadata": {
                 "description": "Enter a private IP address for Panorama's management interface."
