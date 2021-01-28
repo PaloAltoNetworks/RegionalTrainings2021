@@ -32,7 +32,7 @@
             }
         },
         "VNETPrefix": {
-            "defaultValue": "10.0.0.0/16",
+            "defaultValue": "10.100.1.0/24",
             "type": "String",
             "metadata": {
                 "description": "Enter a prefix for the virtual network."
@@ -46,7 +46,7 @@
             }
         },
         "ManagementSubnetPrefix": {
-            "defaultValue": "10.0.0.0/24",
+            "defaultValue": "10.100.1.0/25",
             "type": "String",
             "metadata": {
                 "description": "Enter a subnet prefix for the management subnet."
