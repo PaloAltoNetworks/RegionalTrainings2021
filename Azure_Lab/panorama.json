@@ -88,15 +88,9 @@
             }
         },
         "PanoramaSize": {
-            "defaultValue": "Standard_DS3_v2",
+            "defaultValue": "Standard_DS5_v2",
             "allowedValues": [
-                "Standard_D3_v2",
-                "Standard_D4_v2",
-                "Standard_D5_v2",
-                "Standard_DS3_v2",
-                "Standard_DS4_v2",
                 "Standard_DS5_v2",
-                "Standard_D4_v3",
                 "Standard_D16_v3"
             ],
             "type": "String",
