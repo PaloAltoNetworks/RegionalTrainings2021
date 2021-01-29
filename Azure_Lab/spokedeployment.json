@@ -37,10 +37,8 @@
     "COMMENT_spoke1": "SPOKE1 VM VARIABLES",
     "spoke1_vm_name": "spoke1-vm-ubuntu",
     "spoke1_vm_nic_name": "spoke1-vm-nic0",
-    "spoke1_vm_nic_ip": "172.17.0.4",
-
-
-
+    "spoke1_vm_nic_ip": "172.17.0.4"
+    
 
   },
   "resources": [
