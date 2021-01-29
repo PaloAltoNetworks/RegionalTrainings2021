@@ -30,6 +30,6 @@ In this part, We will Deploy a single Linux Server in a dedicated Resource Group
 </br>
 </br>
 [<img src="https://github.com/PaloAltoNetworks/RegionalTrainings2021/blob/main/Images/deploybutton.png"/>](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FPaloAltoNetworks%2FRegionalTrainings2021%2Fmain%2FAzure_Lab%2Fspokedeployment.json)
-/br>
+</br>
 </br>
 </br>
