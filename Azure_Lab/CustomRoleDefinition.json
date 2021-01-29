@@ -1,9 +1,12 @@
 {
-    "Name": "<StudentName>-customerole",
-    "IsCustom": true,
-    "Description": "Manage template deployments.",
-    "Actions": [
-        "Microsoft.Resources/subscriptions/resourcegroups/*",
+	"properties":{
+		"roleName":"PanoramaPluginRole",
+		"description":"",
+		"assignableScopes":["/subscriptions/d47f1af8-9795-4e86-bbce-da72cfd0f8ec"],
+		"permissions":[
+			{
+			"actions":[
+		 "Microsoft.Resources/subscriptions/resourcegroups/*",
         "Microsoft.Resources/deployments/write",
         "Microsoft.Resources/deployments/operationStatuses/read",
         "Microsoft.Resources/deployments/read",
@@ -50,10 +53,11 @@
         "Microsoft.insights/components/read",
         "Microsoft.insights/components/delete",
         "Microsoft.insights/autoscalesettings/write"
-    ],
-     "NotActions": [
-    ],
-     "AssignableScopes": [
-        "/subscriptions/XXXXXXXXXXXXXXXXXXXXXXXXXX"
-    ]
+			],
+			"notActions":[],
+			"dataActions":[],
+			"notDataActions":[]
+			}
+		]
+	}
 }
