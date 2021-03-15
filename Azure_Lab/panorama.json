@@ -91,7 +91,8 @@
             "defaultValue": "Standard_DS5_v2",
             "allowedValues": [
                 "Standard_DS5_v2",
-                "Standard_D16_v3"
+                "Standard_D16_v3",
+                "Standard_D8_v3"
             ],
             "type": "String",
             "metadata": {
