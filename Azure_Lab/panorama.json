@@ -178,13 +178,6 @@
             "metadata": {
                 "description": "(Optional) To bootstrap from multiple bootstrap directories within the same file share, enter the subdirectory hosting the bootstrap files."
             }
-        },
-        "(opt.) AppendStringToResources": {
-            "defaultValue": "",
-            "type": "String",
-            "metadata": {
-                "description": "If the NAME and CONFIGURATION of the created LBs/NSGs/VMs/AVSET/VNET match an existing LBs/NSGs/VMs/AVSET/VNET in the SAME resource group, the template will its skip creation.  If the new resource NAME matches, but the resource CONFIGURATION does not, the template will fail or will overwrite the existing resource."
-            }
         }
     },
     "variables": {

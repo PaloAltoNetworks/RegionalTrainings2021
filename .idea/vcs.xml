@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Alicloud_VM_HA" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Alicloud_VM_HA" vcs="Git" />
   </component>
 </project>

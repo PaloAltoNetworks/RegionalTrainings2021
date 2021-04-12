@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../RegionalTrainings2020/.idea/RegionalTrainings2020.iml" filepath="$PROJECT_DIR$/../RegionalTrainings2020/.idea/RegionalTrainings2020.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Alicloud_VM_HA/.idea/Alicloud_VM_HA.iml" filepath="$PROJECT_DIR$/../Alicloud_VM_HA/.idea/Alicloud_VM_HA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../PAN-Trainings/Virtualization/Automation/.idea/Automation.iml" filepath="$PROJECT_DIR$/../../PAN-Trainings/Virtualization/Automation/.idea/Automation.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/RegionalTrainings2021.iml" filepath="$PROJECT_DIR$/.idea/RegionalTrainings2021.iml" />
     </modules>
   </component>
