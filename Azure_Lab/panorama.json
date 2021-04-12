@@ -12,56 +12,56 @@
                 "Create new VNET",
                 "Use existing VNET"
             ],
-            "type": "String",
+            "type": "string",
             "metadata": {
                 "description": "If creating a new VNET, anything not specified in the template will be deleted."
             }
         },
         "VNETResourceGroup": {
             "defaultValue": "",
-            "type": "String",
+            "type": "string",
             "metadata": {
                 "description": "If you are deploying a VNET to a different resource than the firewalls, the resource group MUST exist before launch.  If deploying a VNET to the same resource group as the firewalls, leave the field blank or enter the main resource group name."
             }
         },
         "VNETName": {
             "defaultValue": "vnet",
-            "type": "String",
+            "type": "string",
             "metadata": {
                 "description": "Enter a name for the virtual network."
             }
         },
         "VNETPrefix": {
             "defaultValue": "10.100.1.0/24",
-            "type": "String",
+            "type": "string",
             "metadata": {
                 "description": "Enter a prefix for the virtual network."
             }
         },
         "ManagementSubnetName": {
             "defaultValue": "management",
-            "type": "String",
+            "type": "string",
             "metadata": {
                 "description": "Enter a subnet name for the firewall's management interface."
             }
         },
         "ManagementSubnetPrefix": {
             "defaultValue": "10.100.1.0/25",
-            "type": "String",
+            "type": "string",
             "metadata": {
                 "description": "Enter a subnet prefix for the management subnet."
             }
         },
         "PanoramaName": {
             "defaultValue": "panorama",
-            "type": "String",
+            "type": "string",
             "metadata": {
                 "description": "Enter a name for Panorama."
             }
         },
         "PanoramaManagementIP": {
             "defaultValue": "10.100.1.4",
-            "type": "String",
+            "type": "string",
             "metadata": {
                 "description": "Enter a private IP address for Panorama's management interface."
             }
@@ -72,7 +72,7 @@
                 "Yes",
                 "No"
             ],
-            "type": "String",
+            "type": "string",
             "metadata": {
                 "description": "Select 'Yes' to add a public IP to Panorama's management interface."
             }
@@ -82,7 +82,7 @@
             "allowedValues": [
                 "byol"
             ],
-            "type": "String",
+            "type": "string",
             "metadata": {
                 "description": "Panorama is presently available only as a BYOL model."
             }
@@ -95,7 +95,7 @@
                 "Standard_D8_v3",
                 "Standard_D4_v2"
             ],
-            "type": "String",
+            "type": "string",
             "metadata": {
                 "description": "Select a VM size for Panorama."
             }
@@ -106,7 +106,7 @@
                 "latest",
                 "9.0.5"
             ],
-            "type": "String",
+            "type": "string",
             "metadata": {
                 "description": "Select the Panorama version to deploy.  Selecting 'Latest' deploys the latest available image on the Azure Marketplace."
             }
@@ -117,28 +117,28 @@
                 "Standard_LRS",
                 "Premium_LRS"
             ],
-            "type": "String",
+            "type": "string",
             "metadata": {
                 "description": "Select the storage type for the OS disk - Panorama. More info: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/managed-disks-overview"
             }
         },
         "NSGName": {
             "defaultValue": "panw-nsg",
-            "type": "String",
+            "type": "string",
             "metadata": {
                 "description": "Enter a base name for the NSG.  The name entered will have '-mgmt' appended for the mangement NSG and '-untrust' for the untrust NSG."
             }
         },
         "NSGSourcePrefix": {
             "defaultValue": "0.0.0.0/0",
-            "type": "String",
+            "type": "string",
             "metadata": {
                 "description": "Enter a valid address prefix. This address will be able to access the firewall's management interface over TCP/443 (GUI), and TCP/22 (Terminal)."
             }
         },
         "username": {
             "defaultValue": "paloalto",
-            "type": "String",
+            "type": "string",
             "metadata": {
                 "description": "Enter the firewall's administrator username. DO NOT USE ADMIN OR ROOT."
             }
@@ -146,9 +146,16 @@
         "password": {
             "minLength": 12,
             "maxLength": 72,
-            "type": "SecureString",
+            "type": "securestring",
             "metadata": {
                 "description": "Enter the firewall's administrator password. Password must be 12-72 characters and must have 3 of the following: 1 lower case character, 1 upper case character, 1 number, and 1 special character that is not a slash or hyphen."
+            }
+        },
+        "(opt.) AppendStringToResources": {
+            "defaultValue": "",
+            "type": "string",
+            "metadata": {
+                "description": "If the NAME and CONFIGURATION of the created LBs/NSGs/VMs/AVSET/VNET match an existing LBs/NSGs/VMs/AVSET/VNET in the SAME resource group, the template will its skip creation.  If the new resource NAME matches, but the resource CONFIGURATION does not, the template will fail or will overwrite the existing resource."
             }
         }
     },
