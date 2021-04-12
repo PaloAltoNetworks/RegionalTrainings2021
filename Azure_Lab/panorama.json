@@ -150,34 +150,6 @@
             "metadata": {
                 "description": "Enter the firewall's administrator password. Password must be 12-72 characters and must have 3 of the following: 1 lower case character, 1 upper case character, 1 number, and 1 special character that is not a slash or hyphen."
             }
-        },
-        "(opt.) BootstrapStorageAccount": {
-            "defaultValue": "",
-            "type": "String",
-            "metadata": {
-                "description": "(Optional) To bootstrap the firewalls, enter the Azure storage account name that contains the bootstrap file share."
-            }
-        },
-        "(opt.) BootstrapAccessKey": {
-            "defaultValue": "",
-            "type": "SecureString",
-            "metadata": {
-                "description": "(Optional) To bootstrap the firewalls, enter the Azure storage account access key."
-            }
-        },
-        "(opt.) BootstrapFileShareName": {
-            "defaultValue": "",
-            "type": "String",
-            "metadata": {
-                "description": "(Optional) To bootstrap the firewalls, enter the name of the Azure storage account file share that contains the bootstrap configuration."
-            }
-        },
-        "(opt.) BootstrapShareDirectory": {
-            "defaultValue": "",
-            "type": "String",
-            "metadata": {
-                "description": "(Optional) To bootstrap from multiple bootstrap directories within the same file share, enter the subdirectory hosting the bootstrap files."
-            }
         }
     },
     "variables": {
