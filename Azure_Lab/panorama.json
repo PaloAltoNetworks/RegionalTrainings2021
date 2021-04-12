@@ -151,7 +151,7 @@
                 "description": "Enter the firewall's administrator password. Password must be 12-72 characters and must have 3 of the following: 1 lower case character, 1 upper case character, 1 number, and 1 special character that is not a slash or hyphen."
             }
         },
-        "(opt.) AppendStringToResources": {
+        "optional-AppendStringToResources": {
             "defaultValue": "",
             "type": "string",
             "metadata": {
@@ -162,7 +162,7 @@
     "variables": {
         "COMMENT_global": "GLOBAL VARIABLES SHARED AMONG DEPLOYED RESOURCES",
         "global_var_resource_group": "[resourceGroup().name]",
-        "global_var_appendedString": "[if(equals(parameters('(opt.) AppendStringToResources'), ''), '', parameters('(opt.) AppendStringToResources'))]",
+        "global_var_appendedString": "[if(equals(parameters('optional-AppendStringToResources'), ''), '', parameters('optional-AppendStringToResources'))]",
         "global_var_idleTimeoutInMinutes": 4,
         "global_var_allocationMethod": "Static",
         "global_var_networkVersion": "IPv4",
